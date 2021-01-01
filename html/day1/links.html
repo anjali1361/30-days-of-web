@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1-Links</title>
+</head>
+<body>
+
+<!--A link does not have to be text. A link can be an image or any other HTML element!-->
+
+<!--The target attribute specifies where to open the linked document.
+
+The target attribute can have one of the following values:
+
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window-->
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<!--using image as al link-->
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+<!--link to email address-->
+<a href="mailto:someone@example.com">Send email</a>
+
+<!--button as a link-->
+<p>Click the button to go to the HTML tutorial.</p>
+
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+<!--More on Absolute URLs and Relative URLs-->
+<!--Use a full URL to link to a web page: -->
+
+<a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+<!--Link to a page located in the html folder on the current web site: -->
+<a href="/html/default.asp">HTML tutorial</a>
+
+<!--Link to a page located in the same folder as the current page:--> 
+<a href="default.asp">HTML tutorial</a>
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day4-Media</title>
+</head>
+<body>
+    <h1>Common Video Formats</h1>
+    <table>
+        <tr>
+          <th>Format</th>
+          <th>File</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>MPEG</td>/td>
+          <td>.mpg/.mpeg</td>
+          <td>MPEG. Developed by the Moving Pictures Expert Group. The first popular video format on the web. Not supported anymore in HTML.</td>
+        </tr>
+        <tr>
+          <td>AVI</td>
+          <td>.avi</td>
+          <td>AVI (Audio Video Interleave). Developed by Microsoft. Commonly used in video cameras and TV hardware. Plays well on Windows computers, but not in web browsers.</td>
+        </tr>
+        <tr>
+          <td>WMV</td>
+          <td>.wmv</td>
+          <td></td>WMV (Windows Media Video). Developed by Microsoft. Commonly used in video cameras and TV hardware. Plays well on Windows computers, but not in web browsers.</td>
+        </tr>
+        <tr>
+          <td>QuickTime</td>
+          <td>.mov</td>
+          <td></td>QuickTime. Developed by Apple. Commonly used in video cameras and TV hardware. Plays well on Apple computers, but not in web browsers.</td>
+        </tr>
+        <tr>
+          <td>RealVideo</td>
+          <td>.rm/.ram</td>
+          <td>RealVideo. Developed by Real Media to allow video streaming with low bandwidths. Does not play in web browsers.</td>
+        </tr>
+        <tr>
+          <td>Flash</td>
+          <td>.swf/.flv</td>
+          <td>Flash. Developed by Macromedia. Often requires an extra component (plug-in) to play in web browsers.</td>
+        </tr>
+        <tr>
+            <td>Ogg</td>
+            <td>.ogg</td>
+            <td></td>Theora Ogg. Developed by the Xiph.Org Foundation. Supported by HTML.</td>
+        </tr>
+        <tr>
+            <td>WebM</td>
+            <td>.webm</td>
+            <td>WebM. Developed by Mozilla, Opera, Adobe, and Google. Supported by HTML.</td>
+        </tr>
+        <tr>
+        <td>MPEG-4 or MP4</td>
+        <td>.mp4</td>
+        <td>MP4. Developed by the Moving Pictures Expert Group. Commonly used in video cameras and TV hardware. Supported by all browsers and  recommended by YouTube.</td>
+        </tr>
+      </table><br>
+
+      <h3>Note: Only MP4, WebM, and Ogg video are supported by the HTML standard.</h1><br><br>
+
+
+        <h1>Html video elments</h1>
+
+        <video width="400" controls>//use "autoplay" attribute in place of controls,video is in playing state
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+          </video>
+          
+          <p>
+          Video courtesy of 
+          <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+          </p>
+
+          <p>The controls attribute adds video controls, like play, pause, and volume.
+
+            It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+            
+            The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+            
+            The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.</p><br><br>
+
+
+          <h1>Html audio elements</h1>
+
+          
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+
+          <p>HTML Audio - How It Works
+            The controls attribute adds audio controls, like play, pause, and volume.
+            
+            The <source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+            
+            The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.</p>
+
+</body>
+</html>
