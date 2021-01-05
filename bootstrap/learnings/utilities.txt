@@ -1,0 +1,9 @@
+1.https://www.w3schools.com/bootstrap4/bootstrap_utilities.asp--> includes
+ classes for adding margin,padding,border,border-radius,border-color ,
+ float and clearfix,responsive-floats,shadow,alignment,width.height,
+ spacing,visiblity,position,nav-bar,closing-icon(&times;),typography
+
+More About Responsive Floats
+Float an element to the left or to the right depending on screen width, with the responsive float classes (.float-*-left|right - where * is sm (>=576px), md (>=768px), lg (>=992px) or xl (>=1200px)):
+
+https://getbootstrap.com/docs/4.0/examples/-->bootstrap starter template

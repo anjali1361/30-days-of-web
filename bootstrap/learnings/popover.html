@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Positioning Popover</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h1 class="container">How To Create a Popover</h1>
+<ul class="container">
+    <li>To create a popover, add the data-toggle="popover" attribute to an element.</li>
+    <li>Use the title attribute to specify the header text of the popover, and use the data-content attribute to specify the text that should be displayed inside the popover's body:</li>
+</ul>
+
+<p class="container">Note: Popovers must be initialized with jQuery: select the specified element and call the popover() method.
+
+    The following code will enable all popovers in the document:</p>
+    <div class="container">
+        <h3>Popover Example</h3>
+        <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+      </div>
+<br><br>
+
+<div class="container">
+  <h3>Popover Positioning Example</h3>
+  <p>By default, the popover will appear on the right side of the element.</p>
+  <p>Use the data-placement attribute to set the position of the popover on top, bottom, left or the right side of the element.</p>
+  <p>Note: The placement attributes do not work if it is not enough room for them. For example, try to remove these paragraphs and click on the "Top" popover to understand how it works.</p>
+  <a href="#" title="Header" data-toggle="popover" data-placement="top" data-content="Content">Top</a>
+  <a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">Bottom</a>
+  <a href="#" title="Header" data-toggle="popover" data-placement="left" data-content="Content">Left</a>
+  <a href="#" title="Header" data-toggle="popover" data-placement="right" data-content="Content">Right</a>
+</div>
+
+<br><br>
+
+<!--closing popover-->
+
+<h1 class="container">Closing Popovers</h1>
+<p class="container">By default, the popover is closed when you click on the element again. However, you can use the data-trigger="focus" attribute which will close the popover when clicking outside the element:</p>
+<div class="container">
+    <h3>Popover Closing Example</h3>
+      <a href="#" title="Dismissible popover" data-toggle="popover" data-trigger="focus" data-content="Click anywhere in the document to close this popover">Click me</a>
+  </div>
+
+  <br><br>
+
+  <p class="container">Tip: If you want the popover to be displayed when you move the mouse pointer over the element, use the data-trigger attribute with a value of "hover":</p>
+  <div class="container">
+    <h3>Popover On Hover Example</h3>
+    <a href="#" title="Header" data-toggle="popover" data-content="Some content">Click Me</a><br>
+    <a href="#" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+</body>
+</html>
