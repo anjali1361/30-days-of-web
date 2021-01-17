@@ -19,7 +19,7 @@ alpha.forEach(function(element, index, array){
 
 let l = 1, m = 100;
 while (l <= m) {
-    console.log(i);
+    console.log(i);//not i has global scope even if declared inside for loop
 l += 1;
 }
 
